@@ -82,7 +82,7 @@ class Main:
   def check_errors(self):
     if self.errors:
       return True
-    elif len(self.playlists) <= 1:
+    elif len(self.playlists) == 0:
       return True
 
 
@@ -92,5 +92,5 @@ class Main:
       for error in self.errors:
         print(" "+error)
       print("\n")
-    elif len(self.playlists) <= 1:
+    elif len(self.playlists) == 0:
       print("\n!No playlists found.\n")
